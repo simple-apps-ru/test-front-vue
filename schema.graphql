@@ -2835,7 +2835,6 @@ type users {
   avatar_url: String
   created_at: timestamptz!
   display_name: String
-  email: String
   id: uuid!
   phone_number: String
   updated_at: timestamptz!
@@ -2886,7 +2885,6 @@ input users_bool_exp {
   avatar_url: String_comparison_exp
   created_at: timestamptz_comparison_exp
   display_name: String_comparison_exp
-  email: String_comparison_exp
   id: uuid_comparison_exp
   phone_number: String_comparison_exp
   updated_at: timestamptz_comparison_exp
@@ -2908,7 +2906,6 @@ input users_insert_input {
   avatar_url: String
   created_at: timestamptz
   display_name: String
-  email: String
   id: uuid
   phone_number: String
   updated_at: timestamptz
@@ -2919,7 +2916,6 @@ type users_max_fields {
   avatar_url: String
   created_at: timestamptz
   display_name: String
-  email: String
   id: uuid
   phone_number: String
   updated_at: timestamptz
@@ -2932,7 +2928,6 @@ input users_max_order_by {
   avatar_url: order_by
   created_at: order_by
   display_name: order_by
-  email: order_by
   id: order_by
   phone_number: order_by
   updated_at: order_by
@@ -2943,7 +2938,6 @@ type users_min_fields {
   avatar_url: String
   created_at: timestamptz
   display_name: String
-  email: String
   id: uuid
   phone_number: String
   updated_at: timestamptz
@@ -2956,7 +2950,6 @@ input users_min_order_by {
   avatar_url: order_by
   created_at: order_by
   display_name: order_by
-  email: order_by
   id: order_by
   phone_number: order_by
   updated_at: order_by
@@ -2998,7 +2991,6 @@ input users_order_by {
   avatar_url: order_by
   created_at: order_by
   display_name: order_by
-  email: order_by
   id: order_by
   phone_number: order_by
   updated_at: order_by
@@ -3025,9 +3017,6 @@ enum users_select_column {
   display_name
 
   """column name"""
-  email
-
-  """column name"""
   id
 
   """column name"""
@@ -3044,7 +3033,6 @@ input users_set_input {
   avatar_url: String
   created_at: timestamptz
   display_name: String
-  email: String
   id: uuid
   phone_number: String
   updated_at: timestamptz
@@ -3062,9 +3050,6 @@ enum users_update_column {
 
   """column name"""
   display_name
-
-  """column name"""
-  email
 
   """column name"""
   id
